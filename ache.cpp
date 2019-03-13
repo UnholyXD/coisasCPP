@@ -38,5 +38,7 @@ main(){
     }else
         cout<<"errou!";
 
+    system("pause");
+
 }
 
