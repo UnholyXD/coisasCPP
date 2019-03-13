@@ -7,25 +7,32 @@
 using namespace std;
 
 main(){
-    char vetor[301];
+    char vetor[101];
     int i, aux;
     setlocale(LC_ALL,"portuguese");
     srand(time(NULL));
-    cout<<"São 300 posições, onde está o I???"<<endl;
-   for(i=1;i<301;i++){
+    cout<<"São 100 posições, onde está o I???"<<endl;
+   for(i=1;i<101;i++){
         vetor[i]= 'l';
     }
 
     cout<<"VAI GAROTO"<<endl;
-    aux=rand()%301;
+    aux=rand()%101;
     //cout<<aux<<endl;
     vetor[aux]='I';
-
-    for(i=1;i<301;i++){
-        if(i%20==0){
-            cout<<" "<<vetor[i]<<endl;
+    for(i=1;i<11;i++){
+        cout.width(2);
+        cout<<" "<<i;
+    }
+    cout<<endl;
+    cout<<endl;
+    for(i=1;i<101;i++){
+        if(i%10==0){
+            cout.width(3);
+            cout<<vetor[i]<< "    "<<i-10<<endl;
         }else{
-            cout<<" "<<vetor[i];
+            cout.width(3);
+            cout<<vetor[i];
         }
     }
     cout<<endl;
@@ -41,4 +48,5 @@ main(){
     system("pause");
 
 }
+
 
