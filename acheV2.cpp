@@ -17,7 +17,7 @@ main(){
     }
 
     cout<<"VAI GAROTO"<<endl;
-    aux=rand()%101;
+    aux=rand()%100+1;
     //cout<<aux<<endl;
     vetor[aux]='I';
     for(i=1;i<11;i++){
